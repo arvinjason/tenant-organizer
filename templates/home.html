@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+{% if user_flag == 0 %}
+<p>Hello Student</p>
+{% elif user_flag == 1 %}
+<p>Hello Professor</p>
+{% elif user_flag == 2 %}
+<p>Hello Admin</p>
+{% endif %}
+
+<a class="btn btn-primary" href="/form" role="button">Enter New Tenant</a>
+<a class="btn btn-primary" href="/showall" role="button">Show All Tenants</a>
+{% endblock %}

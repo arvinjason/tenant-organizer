@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Form{% endblock %}
+
+{% block content %}
+<h1>Enter New Tenant</h1>
+<!--
+<form action="/form" method="POST">
+  <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="Name" placeholder="John Doe">
+  </div>
+  <div class="form-group">
+    <label for="Amount">Name</label>
+    <input type="text" class="form-control" id="Amount" placeholder="PHP 3,500">
+  </div>  
+  <div class="form-group">
+    <label for="Status">Status</label>
+    <select class="form-control" id="Status">
+      <option>Paid</option>
+      <option>Not Paid</option>
+    </select>
+  </div>
+  <input type="submit" value="submit!">
+</form>
+-->
+
+<form action="/form" method="POST">
+    Name:<input type="text" name="Name"><br>
+    Amount:<input type="text" name="Amount"><br>
+    Status:<input type="text" name="Status"><br>
+    <input type="submit" value="submit!">
+</form>
+
+{% endblock %}
